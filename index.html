@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced To-Do App</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+  <h1>📋 To-Do List</h1>
+
+  <!-- Progress -->
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+  <p id="progressText">0% Completed</p>
+
+  <!-- Input -->
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Task name">
+    <input type="date" id="dateInput">
+    <button onclick="addTask()"><i class="fa fa-plus"></i></button>
+  </div>
+
+  <!-- Task List -->
+  <ul id="taskList"></ul>
+</div>
+
+
+<script src="script.js"></script>
+<footer class="footer">
+  <p>© 2026 Prapti Vasava. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

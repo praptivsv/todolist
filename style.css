@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: #fff;
+  width: 480px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: grab;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.due-date {
+  font-size: 12px;
+  color: #777;
+}
+
+.actions i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #6c63ff;
+  height: 100%;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer p {
+  margin: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
